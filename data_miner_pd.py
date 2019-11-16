@@ -2,7 +2,7 @@ import pandas as pd
 
 
 # read the data
-with open("dataset/values.txt") as f:
+with open("dataset/ukrstat_dno/values.txt") as f:
     vals = f.read().split(sep='\n')
 for i in range(len(vals)):
     vals[i] = float(vals[i].replace(',', '.'))
